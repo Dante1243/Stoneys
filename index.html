@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stoney's Elite Car Detailing | Every detail matters.</title>
+  <meta name="description" content="Stoney's Elite Car Detailing. Precision interior and exterior detailing for luxury, exotic, show and fleet vehicles. Every detail matters.">
+  <meta name="theme-color" content="#0b0b0d">
+  <meta property="og:title" content="Stoney's Elite Car Detailing">
+  <meta property="og:description" content="Every detail matters. Precision detailing for luxury, exotic, show and fleet vehicles.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Stoney's Elite Car Detailing, back to top">
+        <!-- TODO: replace with real logo file once received (assets/img/logo.svg / .png) -->
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span class="brand-text">
+          <span class="brand-name">Stoney's</span>
+          <span class="brand-sub">Elite Car Detailing</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#details">The Details</a>
+        <a href="#process">Process</a>
+        <a href="#work">Work</a>
+        <a href="#fleet">Fleet</a>
+        <a href="#contact">Contact</a>
+        <a href="#quote" class="btn btn-sm btn-primary nav-cta">Request a Quote</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">Stoney's Elite Car Detailing</p>
+          <h1 class="hero-title reveal">
+            <span class="line">Every detail</span>
+            <span class="line"><em>matters.</em></span>
+          </h1>
+          <p class="hero-lead reveal">
+            Precision detailing for cars that deserve more than a wash. Luxury, exotic,
+            show and fleet vehicles, finished by hand down to the last seam.
+          </p>
+          <div class="hero-actions reveal">
+            <a href="#quote" class="btn btn-primary">Request a Quote</a>
+            <a href="#quote" class="btn btn-ghost" data-book>Book Now</a>
+          </div>
+          <ul class="hero-meta reveal" aria-label="Highlights">
+            <li><strong>2</strong><span>cars a day.<br>Never rushed.</span></li>
+            <li><strong>Fri–Mon</strong><span>bookings at our<br>studio or mobile</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <a href="#services" class="scroll-cue" aria-label="Scroll to services"><span></span></a>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <!-- DRAFT copy: confirm exact inclusions with the client -->
+    <section class="section" id="services">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Services</p>
+          <h2>Two disciplines.<br><em>One standard.</em></h2>
+          <p class="section-lead">
+            No menus, no fixed packages. Every car is assessed on its size and condition,
+            and quoted for exactly what it needs.
+          </p>
+        </header>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M10 34V20a6 6 0 0 1 6-6h16a6 6 0 0 1 6 6v14" /><path d="M6 34h36v4H6z" /><path d="M16 14v-4h16v4" /><path d="M14 26h20" /></svg>
+            </div>
+            <h3>Interior Detail</h3>
+            <p>Every surface you touch, restored. Leather, fabric, trim and glass, cleaned and protected without shortcuts.</p>
+            <ul class="tick-list">
+              <li>Deep vacuum, including rails, vents and crevices</li>
+              <li>Leather and upholstery cleaning and conditioning</li>
+              <li>Dash, console and trim detailed by hand</li>
+              <li>Streak-free glass, inside and out</li>
+            </ul>
+            <a href="#quote" class="btn btn-outline" data-service="interior">Request a Quote</a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M4 30l4-10a6 6 0 0 1 5.6-4h20.8a6 6 0 0 1 5.6 4l4 10v6H4z" /><circle cx="13" cy="36" r="4" /><circle cx="35" cy="36" r="4" /><path d="M10 24h28" /></svg>
+            </div>
+            <h3>Exterior Detail</h3>
+            <p>A finish that holds up under any light. Paint, wheels and trim, decontaminated and protected properly.</p>
+            <ul class="tick-list">
+              <li>Safe hand wash and decontamination</li>
+              <li>Wheels, tyres and arches done properly</li>
+              <li>Badges, grilles and panel gaps cleaned by hand</li>
+              <li>Paint protection and tyre dressing</li>
+            </ul>
+            <a href="#quote" class="btn btn-outline" data-service="exterior">Request a Quote</a>
+          </article>
+
+          <article class="service-card service-card--soon reveal">
+            <span class="badge">Coming Soon</span>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="16" /><circle cx="24" cy="24" r="6" /><path d="M24 4v6M24 38v6M4 24h6M38 24h6" /></svg>
+            </div>
+            <h3>Paint Correction</h3>
+            <p>Machine polishing to take out swirls, haze and light scratches, bringing back true depth and clarity.</p>
+            <p class="muted small">Want to hear when it launches? Mention it in your quote request.</p>
+          </article>
+        </div>
+
+        <p class="pricing-note reveal">
+          <span class="pricing-dot" aria-hidden="true"></span>
+          Pricing depends on vehicle size and condition. Every job starts with a personal quote.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ THE DETAILS ============ -->
+    <!-- TODO: replace placeholder art with real macro photos from the client -->
+    <section class="section section--dark" id="details">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">The Details</p>
+          <h2>Where most stop,<br><em>we start.</em></h2>
+          <p class="section-lead">
+            The difference between clean and detailed is measured in millimetres.
+            Hover or tap to look closer.
+          </p>
+        </header>
+
+        <div class="details-grid">
+          <figure class="detail-card reveal">
+            <div class="zoom" tabindex="0">
+              <img src="assets/img/placeholders/detail-edges.svg" alt="Close-up of a polished paint edge" loading="lazy">
+            </div>
+            <figcaption>
+              <span class="detail-num">01</span>
+              <h3>Edges</h3>
+              <p>Panel edges, door jambs and the lines where wax and grime love to sit.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="detail-card reveal">
+            <div class="zoom" tabindex="0">
+              <img src="assets/img/placeholders/detail-vents.svg" alt="Close-up of clean air vent slats" loading="lazy">
+            </div>
+            <figcaption>
+              <span class="detail-num">02</span>
+              <h3>Vents</h3>
+              <p>Every slat, cleared by brush. No dust left in the corners you only notice later.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="detail-card reveal">
+            <div class="zoom" tabindex="0">
+              <img src="assets/img/placeholders/detail-wheels.svg" alt="Close-up of a clean alloy wheel spoke" loading="lazy">
+            </div>
+            <figcaption>
+              <span class="detail-num">03</span>
+              <h3>Wheels</h3>
+              <p>Inner barrels, lug nuts and between the spokes. Not just the face you see.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="detail-card reveal">
+            <div class="zoom" tabindex="0">
+              <img src="assets/img/placeholders/detail-seams.svg" alt="Close-up of leather seat stitching" loading="lazy">
+            </div>
+            <figcaption>
+              <span class="detail-num">04</span>
+              <h3>Seams</h3>
+              <p>Stitching and leather folds cleaned gently, so dirt doesn't wear in over time.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section" id="process">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Our Process</p>
+          <h2>Methodical,<br><em>by design.</em></h2>
+          <p class="section-lead">The same careful sequence on every car, whether it's a weekend exotic or a work ute.</p>
+        </header>
+
+        <ol class="process-list">
+          <li class="process-step reveal">
+            <span class="step-num">01</span>
+            <div>
+              <h3>Quote</h3>
+              <p>Tell us about your car and send a few photos. We reply with a price made for your vehicle, not a menu.</p>
+            </div>
+          </li>
+          <li class="process-step reveal">
+            <span class="step-num">02</span>
+            <div>
+              <h3>Inspect</h3>
+              <p>A walk-around under proper light before anything starts. We note what's there and agree on what matters to you.</p>
+            </div>
+          </li>
+          <li class="process-step reveal">
+            <span class="step-num">03</span>
+            <div>
+              <h3>Prepare</h3>
+              <p>Pre-rinse, decontaminate and protect the sensitive areas. The groundwork that prevents damage later.</p>
+            </div>
+          </li>
+          <li class="process-step reveal">
+            <span class="step-num">04</span>
+            <div>
+              <h3>Detail</h3>
+              <p>The work itself, panel by panel and seam by seam, with the right tool for every surface.</p>
+            </div>
+          </li>
+          <li class="process-step reveal">
+            <span class="step-num">05</span>
+            <div>
+              <h3>Final check</h3>
+              <p>A second inspection from every angle. Anything that isn't right gets redone before you see it.</p>
+            </div>
+          </li>
+          <li class="process-step reveal">
+            <span class="step-num">06</span>
+            <div>
+              <h3>Handover</h3>
+              <p>We walk you through the finish and how to keep it that way.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SHOW & ENTHUSIAST WORK ============ -->
+    <!-- TODO: replace with real before/after photo pairs -->
+    <section class="section section--dark" id="work">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Show &amp; Enthusiast Work</p>
+          <h2>Before.<br><em>After.</em></h2>
+          <p class="section-lead">Drag the slider to see the difference.</p>
+        </header>
+
+        <div class="gallery">
+          <figure class="ba reveal" style="--hue: 0deg">
+            <div class="ba-frame">
+              <img class="ba-after" src="assets/img/placeholders/panel.svg" alt="After: glossy, swirl-free paint" loading="lazy">
+              <div class="ba-before-wrap">
+                <img class="ba-before" src="assets/img/placeholders/panel.svg" alt="Before: dull, swirled paint" loading="lazy">
+                <div class="ba-swirl" aria-hidden="true"></div>
+              </div>
+              <div class="ba-handle" aria-hidden="true"><span></span></div>
+              <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Before and after comparison slider">
+              <span class="ba-label ba-label--before">Before</span>
+              <span class="ba-label ba-label--after">After</span>
+            </div>
+            <figcaption>Exterior: gloss restoration</figcaption>
+          </figure>
+
+          <figure class="ba reveal" style="--hue: 200deg">
+            <div class="ba-frame">
+              <img class="ba-after" src="assets/img/placeholders/panel.svg" alt="After: deep, clear finish" loading="lazy">
+              <div class="ba-before-wrap">
+                <img class="ba-before" src="assets/img/placeholders/panel.svg" alt="Before: hazy finish" loading="lazy">
+                <div class="ba-swirl" aria-hidden="true"></div>
+              </div>
+              <div class="ba-handle" aria-hidden="true"><span></span></div>
+              <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Before and after comparison slider">
+              <span class="ba-label ba-label--before">Before</span>
+              <span class="ba-label ba-label--after">After</span>
+            </div>
+            <figcaption>Show prep: full exterior</figcaption>
+          </figure>
+
+          <figure class="ba reveal" style="--hue: 40deg">
+            <div class="ba-frame">
+              <img class="ba-after" src="assets/img/placeholders/panel.svg" alt="After: restored finish" loading="lazy">
+              <div class="ba-before-wrap">
+                <img class="ba-before" src="assets/img/placeholders/panel.svg" alt="Before: weathered finish" loading="lazy">
+                <div class="ba-swirl" aria-hidden="true"></div>
+              </div>
+              <div class="ba-handle" aria-hidden="true"><span></span></div>
+              <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Before and after comparison slider">
+              <span class="ba-label ba-label--before">Before</span>
+              <span class="ba-label ba-label--after">After</span>
+            </div>
+            <figcaption>Enthusiast: weekend car refresh</figcaption>
+          </figure>
+        </div>
+        <p class="placeholder-note">Sample visuals. Real client work coming soon.</p>
+      </div>
+    </section>
+
+    <!-- ============ FLEET ============ -->
+    <section class="section" id="fleet">
+      <div class="container fleet-inner">
+        <div class="fleet-copy reveal">
+          <p class="eyebrow">Fleet &amp; Business</p>
+          <h2>Your fleet is<br><em>your first impression.</em></h2>
+          <p class="section-lead">
+            Company cars, utes and vans kept to the same standard as a show car,
+            on a schedule that suits your business.
+          </p>
+          <ul class="tick-list">
+            <li>One-off, weekly, fortnightly or monthly schedules</li>
+            <li>Consistent results across every vehicle</li>
+            <li>At our location or on-site, by arrangement</li>
+            <li>One contact, simple invoicing</li>
+          </ul>
+        </div>
+
+        <form class="card form reveal" id="fleetForm" novalidate>
+          <h3>Request a Fleet Quote</h3>
+          <div class="form-grid">
+            <label class="field">
+              <span>Business name</span>
+              <input name="business" type="text" autocomplete="organization" required>
+            </label>
+            <label class="field">
+              <span>Contact name</span>
+              <input name="name" type="text" autocomplete="name" required>
+            </label>
+            <label class="field">
+              <span>Phone</span>
+              <input name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+            </label>
+            <label class="field">
+              <span>Email</span>
+              <input name="email" type="email" autocomplete="email" required>
+            </label>
+            <label class="field">
+              <span>Number of vehicles</span>
+              <input name="vehicleCount" type="number" min="1" inputmode="numeric" required>
+            </label>
+            <label class="field">
+              <span>Frequency</span>
+              <select name="frequency" required>
+                <option value="">Select…</option>
+                <option>One-off</option>
+                <option>Weekly</option>
+                <option>Fortnightly</option>
+                <option>Monthly</option>
+                <option>Not sure yet</option>
+              </select>
+            </label>
+            <fieldset class="field field--full">
+              <legend>Vehicle types</legend>
+              <div class="chips">
+                <label class="chip"><input type="checkbox" name="vehicleTypes" value="Sedans / hatches"><span>Sedans / hatches</span></label>
+                <label class="chip"><input type="checkbox" name="vehicleTypes" value="SUVs"><span>SUVs</span></label>
+                <label class="chip"><input type="checkbox" name="vehicleTypes" value="Utes"><span>Utes</span></label>
+                <label class="chip"><input type="checkbox" name="vehicleTypes" value="Vans"><span>Vans</span></label>
+                <label class="chip"><input type="checkbox" name="vehicleTypes" value="Trucks"><span>Trucks</span></label>
+                <label class="chip"><input type="checkbox" name="vehicleTypes" value="Other"><span>Other</span></label>
+              </div>
+            </fieldset>
+            <label class="field field--full">
+              <span>Anything else we should know? <em class="optional">(optional)</em></span>
+              <textarea name="notes" rows="3"></textarea>
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Request a Fleet Quote</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ WHY US ============ -->
+    <section class="section section--dark" id="why">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Why Stoney's</p>
+          <h2>Fewer cars.<br><em>Better work.</em></h2>
+        </header>
+
+        <div class="why-grid">
+          <div class="why-item reveal">
+            <span class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><circle cx="14" cy="14" r="9" /><path d="M21 21l7 7" /></svg>
+            </span>
+            <h3>Obsessive about detail</h3>
+            <p>Edges, vents, seams, barrels. The parts others skip are the parts we're known for.</p>
+          </div>
+          <div class="why-item reveal">
+            <span class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="12" /><path d="M16 9v7l5 3" /></svg>
+            </span>
+            <h3>Never rushed</h3>
+            <p>A maximum of two cars a day, so each one gets the time it actually needs.</p>
+          </div>
+          <div class="why-item reveal">
+            <span class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><path d="M6 10h20v16H6z" /><path d="M11 10V7h10v3" /><path d="M6 16h20" /></svg>
+            </span>
+            <h3>Quoted for your car</h3>
+            <p>No one-size-fits-all packages. You pay for what your car needs, nothing more.</p>
+          </div>
+          <div class="why-item reveal">
+            <span class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><path d="M16 29s9-8.5 9-15a9 9 0 0 0-18 0c0 6.5 9 15 9 15z" /><circle cx="16" cy="14" r="3" /></svg>
+            </span>
+            <h3>Studio or mobile</h3>
+            <p>Bring it to our location, or we come to you when mobile service suits better.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <!-- Real reviews only. Add them to the REVIEWS array in js/main.js -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Reviews</p>
+          <h2>In their<br><em>words.</em></h2>
+        </header>
+        <div class="reviews" id="reviewsList"></div>
+      </div>
+    </section>
+
+    <!-- ============ QUOTE ============ -->
+    <section class="section section--dark" id="quote">
+      <div class="container quote-inner">
+        <div class="quote-copy reveal">
+          <p class="eyebrow">Request a Quote</p>
+          <h2>Let's look at<br><em>your car.</em></h2>
+          <p class="section-lead">
+            Tell us about your vehicle and add a few photos. We'll send a personal quote,
+            and once you approve it you choose your date.
+          </p>
+          <ol class="mini-steps">
+            <li><span>1</span>Send your request</li>
+            <li><span>2</span>Receive your quote</li>
+            <li><span>3</span>Approve and pick a day (Fri–Mon)</li>
+          </ol>
+        </div>
+
+        <div class="card quote-card reveal">
+          <form class="form" id="quoteForm" novalidate>
+            <fieldset class="form-section">
+              <legend>About you</legend>
+              <div class="form-grid">
+                <label class="field field--full">
+                  <span>Full name</span>
+                  <input name="name" type="text" autocomplete="name" required>
+                </label>
+                <label class="field">
+                  <span>Phone</span>
+                  <input name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+                </label>
+                <label class="field">
+                  <span>Email</span>
+                  <input name="email" type="email" autocomplete="email" required>
+                </label>
+              </div>
+              <div class="field field--full">
+                <span class="field-label">I'm booking for a…</span>
+                <div class="chips chips--radio">
+                  <label class="chip"><input type="radio" name="customerType" value="personal" required checked><span>Personal vehicle</span></label>
+                  <label class="chip"><input type="radio" name="customerType" value="enthusiast"><span>Enthusiast / show car</span></label>
+                  <label class="chip"><input type="radio" name="customerType" value="fleet"><span>Fleet / business</span></label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-section">
+              <legend>Your vehicle</legend>
+              <div class="form-grid form-grid--3">
+                <label class="field">
+                  <span>Make</span>
+                  <input name="make" type="text" placeholder="e.g. Porsche" required>
+                </label>
+                <label class="field">
+                  <span>Model</span>
+                  <input name="model" type="text" placeholder="e.g. 911" required>
+                </label>
+                <label class="field">
+                  <span>Year</span>
+                  <input name="year" type="number" min="1900" max="2100" inputmode="numeric" placeholder="e.g. 2021" required>
+                </label>
+              </div>
+              <!-- DRAFT size options: confirm with the client -->
+              <label class="field">
+                <span>Vehicle size</span>
+                <select name="size" required>
+                  <option value="">Select…</option>
+                  <option value="small">Small (hatch / coupe)</option>
+                  <option value="sedan">Sedan / wagon</option>
+                  <option value="suv">SUV</option>
+                  <option value="large">Large SUV / 4WD / ute</option>
+                  <option value="van">Van / people mover</option>
+                </select>
+              </label>
+            </fieldset>
+
+            <fieldset class="form-section">
+              <legend>The job</legend>
+              <div class="field">
+                <span class="field-label">Service wanted</span>
+                <div class="chips">
+                  <label class="chip"><input type="checkbox" name="services" value="interior"><span>Interior Detail</span></label>
+                  <label class="chip"><input type="checkbox" name="services" value="exterior"><span>Exterior Detail</span></label>
+                  <label class="chip"><input type="checkbox" name="services" value="paint-correction-interest"><span>Interested in Paint Correction</span></label>
+                </div>
+              </div>
+              <label class="field">
+                <span>Condition notes</span>
+                <textarea name="condition" rows="3" placeholder="Pet hair, stains, swirls, last detailed… anything we should know."></textarea>
+              </label>
+              <div class="field">
+                <span class="field-label">Photos <em class="optional">(optional, up to 6)</em></span>
+                <label class="upload" id="uploadDrop">
+                  <input type="file" name="photos" id="photoInput" accept="image/*" multiple>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16l4-4 3 3 5-5 4 4" /><rect x="3" y="4" width="18" height="16" rx="2" /></svg>
+                  <span>Tap to add photos, or drop them here</span>
+                </label>
+                <div class="thumbs" id="photoThumbs"></div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-section">
+              <legend>Where</legend>
+              <div class="location-options">
+                <label class="loc-option">
+                  <input type="radio" name="locationType" value="shop" checked>
+                  <span>
+                    <strong>At our location</strong>
+                    <small>Drop your car at our studio</small>
+                  </span>
+                </label>
+                <label class="loc-option">
+                  <input type="radio" name="locationType" value="mobile">
+                  <span>
+                    <strong>Mobile (come to me)</strong>
+                    <small>Available on request</small>
+                  </span>
+                </label>
+              </div>
+              <label class="field mobile-address" id="mobileAddress" hidden>
+                <span>Your address</span>
+                <input name="address" type="text" autocomplete="street-address">
+              </label>
+            </fieldset>
+
+            <button type="submit" class="btn btn-primary btn-block">Send Quote Request</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="confirm" id="quoteConfirm" hidden tabindex="-1">
+            <div class="confirm-mark" aria-hidden="true">
+              <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24" /><path d="M15 27l7 7 15-15" /></svg>
+            </div>
+            <h3>Request received.</h3>
+            <p>Thank you<span id="confirmName"></span>. We'll review your car and send a personal quote to your email and phone shortly.</p>
+            <p class="muted small" id="confirmNote"></p>
+            <button type="button" class="btn btn-ghost" id="quoteAgain">Send another request</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container contact-inner">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contact &amp; Location</p>
+          <h2>Come and see us,<br><em>or we'll come to you.</em></h2>
+
+          <ul class="contact-list">
+            <li>
+              <span class="contact-label">Phone</span>
+              <a href="tel:+61458811873">0458 811 873</a>
+            </li>
+            <li>
+              <span class="contact-label">Email</span>
+              <a href="mailto:Kaiden@StoneysElitedetail.com">Kaiden@StoneysElitedetail.com</a>
+            </li>
+            <li>
+              <span class="contact-label">Studio</span>
+              <!-- TODO: real address -->
+              <span>Address coming soon</span>
+            </li>
+            <li>
+              <span class="contact-label">Hours</span>
+              <span>Friday to Monday, by appointment</span>
+            </li>
+          </ul>
+
+          <p class="mobile-note">
+            <span class="pricing-dot" aria-hidden="true"></span>
+            We work mostly from our own location. Mobile service available on request.
+          </p>
+
+          <a class="social" href="https://www.facebook.com/share/1XL3MjhNh7/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Stoney's Elite on Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5V6.8c0-.8.5-1 .9-1h2.4V2.1L14 2c-3.6 0-4.4 2.7-4.4 4.4v2.1H7.4v3.8h2.2V22H14v-9.7h3l.4-3.8z" /></svg>
+            <span>Follow us on Facebook</span>
+          </a>
+        </div>
+
+        <!-- TODO: once the address is known, replace with:
+             <iframe src="https://maps.google.com/maps?q=ADDRESS&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map"></iframe> -->
+        <div class="map-card reveal">
+          <div class="map-placeholder">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.6 7-12a7 7 0 0 0-14 0c0 5.4 7 12 7 12z" /><circle cx="12" cy="10" r="2.5" /></svg>
+            <p>Map coming soon</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <div>
+          <p class="brand-name">Stoney's Elite Car Detailing</p>
+          <p class="muted"><em>Every detail matters.</em></p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="tel:+61458811873">0458 811 873</a>
+        <a href="mailto:Kaiden@StoneysElitedetail.com">Kaiden@StoneysElitedetail.com</a>
+        <a class="social social--icon" href="https://www.facebook.com/share/1XL3MjhNh7/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5V6.8c0-.8.5-1 .9-1h2.4V2.1L14 2c-3.6 0-4.4 2.7-4.4 4.4v2.1H7.4v3.8h2.2V22H14v-9.7h3l.4-3.8z" /></svg>
+        </a>
+      </div>
+      <p class="footer-copy muted small">© <span id="year"></span> Stoney's Elite Car Detailing</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/hero.js"></script>
+</body>
+</html>

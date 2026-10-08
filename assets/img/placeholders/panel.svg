@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="paint" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3a0d10"/><stop offset=".35" stop-color="#9c1c22"/><stop offset=".55" stop-color="#5a0f14"/><stop offset="1" stop-color="#1a0507"/>
+    </linearGradient>
+    <linearGradient id="refl" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="hot" cx=".62" cy=".3" r=".35"><stop offset="0" stop-color="#fff" stop-opacity=".5"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#paint)"/>
+  <path d="M0 420 C 200 360, 520 330, 800 380 L 800 410 C 520 360, 220 390, 0 450 Z" fill="url(#refl)" opacity=".7"/>
+  <path d="M0 640 C 260 590, 560 600, 800 650 L 800 662 C 560 614, 260 604, 0 652 Z" fill="url(#refl)" opacity=".35"/>
+  <rect width="800" height="1000" fill="url(#hot)"/>
+  <path d="M-20 820 C 240 760, 560 760, 820 800 L 820 1020 L -20 1020 Z" fill="#000" opacity=".35"/>
+  <path d="M-20 818 C 240 758, 560 758, 820 798" stroke="#fff" stroke-opacity=".5" stroke-width="2" fill="none"/>
+</svg>
